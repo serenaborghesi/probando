@@ -1,4 +1,4 @@
-const JUEGOS_MESA_URL = "http://127.0.0.1:5003/juegos";
+const JUEGOS_MESA_URL = "../juegos.json";  
 
 // Obtener el nombre del juego desde la URL (por ejemplo, ?game=Catan)
 const params = new URLSearchParams(window.location.search);
