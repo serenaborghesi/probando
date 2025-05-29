@@ -1,4 +1,4 @@
-const JUEGOS_MESA_URL = "./juegos.json";
+const JUEGOS_MESA_URL = "../frontend/juegos.json";
 
 function fetchJuegosMesaAPI() { 
     axios.get(JUEGOS_MESA_URL) 
