@@ -42,7 +42,7 @@ function renderJuegoDetail(juego) { // Esta función se encarga de crear y agreg
 
     // Imagen del juego
     const juegoImage = document.createElement("img");
-    juegoImage.src = "frontend/img/" + juego.image;
+    juegoImage.src = "img/" + juego.image;
     juegoImage.alt = juego.name;
     juegoImage.width = 400;  // Ajusta el tamaño según lo necesites
 
@@ -87,7 +87,9 @@ function renderJuegoDetail(juego) { // Esta función se encarga de crear y agreg
     juegoDetailDiv.appendChild(juegoCuriositiesList);
 
     const mainContainer = document.getElementById("main-container");
+    mainContainer.innerHTML = "";  // Limpiar contenido previo
     mainContainer.appendChild(juegoDetailDiv);
+
 }
 
 fetchJuegoDetails();
